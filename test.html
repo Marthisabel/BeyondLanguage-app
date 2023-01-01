@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoEspanol.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estiloQuizz.css">
+    <title>BeyondLanguage</title>
+</head>
+<body>
+    <header>
+        <div class="centrar">
+            <div class="logo">
+                <img src="img/logoEspanol2.png" alt="" width="90" height="90">
+                <h1>BeyondLanguage</h1>
+            </div>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="DeberesDigital.html">ACTVIDADES</a></li>
+                    <li><a href="register.html">REGISTRO</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+<br><br><br>
+        
+    </header>
+    <br>
+    <h1>Quizz Game</h1>
+        <p>Juego de capitales</p>
+    
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - Cual es la capital de Italia?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Turin
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Napoles
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Roma
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>2 - Cual es la capital de Noruega?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Oslo
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Bucares
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Madrid
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>3 - Cual es la capital de Peru?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> La Paz
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Ciudad del peru
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Lima
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>4 - Cual es la capital de Suecia?</h3>
+            <label>
+                <input type="radio" value="1" name="p3"onclick="respuesta(3,this)"> Gutemburdo
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Estocolmo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Lund
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>5 - Cual es la capital de Canada?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Candberra
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Toronto
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Ottawa
+            </label>
+        </section>
+
+        <button onclick="corregir()">Submit</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
